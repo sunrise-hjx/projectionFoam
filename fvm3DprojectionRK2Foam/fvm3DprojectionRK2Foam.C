@@ -124,8 +124,8 @@ int main(int argc, char *argv[])
 
         #include "continuityErrs.H"
 
-        U += fvc::reconstruct(phi - phiU);
-        // U += -rAUf * fvc::grad(p);
+        // U += fvc::reconstruct(phi - phiU);
+        U += -rAUf * fvc::grad(p);
         U.correctBoundaryConditions();     
         // U.replace(vector::Z,0.0);
 
