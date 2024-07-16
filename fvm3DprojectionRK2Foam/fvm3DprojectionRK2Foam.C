@@ -145,7 +145,6 @@ int main(int argc, char *argv[])
             << "  ClockTime = " << runTime.elapsedClockTime() << " s"
             << nl << endl;
     }
-
     Foam::Info<< "End\n" << endl;
     return 0;
 }
