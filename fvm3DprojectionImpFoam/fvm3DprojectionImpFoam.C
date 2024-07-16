@@ -130,7 +130,6 @@ int main(int argc, char *argv[])
     }
 
     Foam::Info<< "End\n" << endl;
-
     return 0;
 }
 
